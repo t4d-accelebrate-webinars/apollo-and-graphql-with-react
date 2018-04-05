@@ -33,8 +33,8 @@ export class BookForm extends Component {
     };
 
     onClick = () => {
-        this.props.onSubmit({ ...this.state });
-        this.setState(this.initState());
+        this.props.onSubmit({ ...this.state })
+            .then(() => this.setState(this.initState()));
     };
 
     render() {
@@ -71,7 +71,7 @@ export class BookForm extends Component {
                     <input type="text" id="quantity-input" name="quantity"
                         value={this.state.quantity} onChange={this.onChange} />
                 </div>
-                <button type="button">Submit Book</button>
+                <button type="button" onClick={this.onClick}>Submit Book</button>
             </form>
         </div>;
     }

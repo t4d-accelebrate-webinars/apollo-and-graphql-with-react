@@ -42,4 +42,4 @@ export const mutationType = new GraphQLObjectType({
             },
         }
     }),
-})
+});

@@ -12,7 +12,7 @@ class App extends Component {
 
     return <div>
       <BookTable books={this.props.books} /> 
-      <BookForm onSubmit={null} />
+      <BookForm onSubmit={this.props.insertBook} />
     </div>;
   }
 }

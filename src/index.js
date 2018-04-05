@@ -7,7 +7,13 @@ import { BooksData } from './services/books-data';
 
 const booksData = new BooksData('http://localhost:3030/graphql');
 
-booksData.all().then(books => {
-    ReactDOM.render(<App books={books} />, document.getElementById('root'));
+const insertBook = book => booksData
+    .insert(book)
+    .then(() => refreshBooks());
+
+const refreshBooks = () => booksData.all().then(books => {
+    ReactDOM.render(<App books={books} insertBook={insertBook} />, document.getElementById('root'));
 });
+
+refreshBooks();
 

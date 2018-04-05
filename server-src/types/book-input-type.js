@@ -5,7 +5,7 @@ import {
 
 export const bookInputType = new GraphQLInputObjectType({
 
-    name: 'BookInputType',
+    name: 'BookInput',
 
     fields: () => ({
         id: { type: GraphQLID },
