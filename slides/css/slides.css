@@ -1,0 +1,47 @@
+#source { 
+    display:none;
+}
+
+body {
+    font-size:100%;
+}
+
+body.remark-container {
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    background-color: black;
+    color:white;
+}
+
+.remark-slide-content {
+    background-color: white;
+    color:black;
+}
+
+.remark-slide-scaler {
+    box-shadow: initial;
+    -webkit-box-shadow: initial;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin:0;
+    padding:0;
+    font-weight:normal;
+}
+
+h1 {
+    font-size: 3.5rem;
+}
+
+h2 {
+    font-size: 2.5rem;
+    margin-top:-5px;
+}
+
+a {
+    color:black;
+    text-decoration: none;
+}
+
+a:visited {
+    color:black;
+}

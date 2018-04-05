@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Getting Started with Apollo and GraphQL with React</title>
+    <meta charset="utf-8">
+    <link href="css/slides.css" rel="stylesheet">
+    <link href="css/accelebrate-theme.css" rel="stylesheet">
+</head>
+
+<body>
+    <textarea id="source">
+class: divider
+---
+name: title
+class: title, center, middle
+
+.footer[
+    <img src="images/accelebrate-logo-small.png">
+]
+---
+name: content
+class: content
+
+.footer[
+    <img src="images/accelebrate-logo-small.png">
+]
+---
+class: divider
+---
+template: title
+
+# Accelebrate <br> .secondary-color[Webinar]
+<hr>
+- Getting Started with<br>Apollo and GraphQL with React
+<br><br>
+.presenter[Presenter: Eric Greene (eric@t4d.io)]
+---
+template: content
+
+# .center[.secondary-color[The] Accelebrate Difference]
+<hr>
+
+- In-person private training for your group
+ - In-person with some remotes 
+- Synchronous online
+ - Private
+ - Public
+- Online courses (and courses with some online remotes) are easily recordable in most cases
+
+---
+template: content
+
+# .center[.secondary-color[The] Accelebrate Difference]
+<hr>
+- Instructors who are experts
+ - Real-world experience 
+- Flexible and eager to customize your training
+ - We always request a pre-class call and/or survey
+- Rapidly responsive before, during, and after class
+- Drama-free logistics - instructor and materials arrive on-time
+---
+template: content
+
+# .center[ Apollo/GraphQL-related .secondary-color[Courses]]
+<hr>
+- Introduction to GraphQL and Apollo Client with React
+- Modern Web Service Design with REST, GraphQL, and Beyond
+- Introduction to React, GraphQL, and Relay
+
+---
+template: content
+
+# .center[Webinar .secondary-color[Agenda]]
+<hr>
+- What is GraphQL?
+- What is Apollo?
+- Integrating React with Apollo and GraphQL
+- Apollo + GraphQL + React Demonstration
+- Questions
+
+---
+template: content
+
+# .center[What is .secondary-color[GraphQL?]]
+<hr>
+- GraphQL is an API for your data
+- GraphQL is like SQL for all your data services
+- GraphQL provides a standards-based query language to request the data which is needed
+- The data structure is not limited to a "row" or a single "resource", but is a map of data spanning many nodes and collections of nodes
+
+---
+template: content
+
+# .center[What is .secondary-color[GraphQL?]]
+<hr>
+- GraphQL is superior to REST services
+ - Request only the needed data
+ - Combine multiple resources into a single request
+ - Mutations are not tied to the HTTP verb system
+ - Queries follow a standard not conventions
+ - Query syntax is easy to use
+
+---
+template: content
+ 
+# .center[What is .secondary-color[GraphQL?]]
+<hr>
+- GraphQL can be used with REST services
+ - Existing data services, including REST services, can be wrapped in GraphQL
+ - Wrapping existing data services in GraphQL allows GraphQL to be used today without rewriting existing systems
+ - GraphQL can be adopted as needed
+ 
+---
+template: content
+  
+# .center[What is .secondary-color[GraphQL?]]
+<hr>
+- GraphQL supports three kinds queries
+  - Retrieving Data (think of SQL select)
+  - Mutating Data (think of a more flexible SQL insert, update, delete)
+  - Introspection queries to retrieve the schema of the GraphQL types
+
+---
+template: content
+    
+# .center[What is .secondary-color[GraphQL?]]
+<hr>
+- GraphQL supports a sophisticated type system
+ - GraphQL is a standard which can be implemented in any programming language such as JavaScript, Java, .NET, Python, etc…
+ - Types are not tied to the implementation language's types
+ - GraphQL support primitives, enums, object types
+ - Also, GraphQL supports interfaces and union types
+
+
+---
+template: content
+     
+# .center[What is .secondary-color[GraphQL?]]
+<hr>
+- GraphQL and Web Applications
+ - GraphQL returns query results in a JSON format
+ - Calls to GraphQL can be made with the XHR object or the newer Fetch API
+ - All calls are POST requests
+ - Several programming clients for GraphQL exist, two popular ones are Apollo and Relay
+
+ 
+---
+template: content
+
+# .center[What is .secondary-color[Apollo?]]
+<hr>
+- Add Content Here...
+
+---
+template: content
+
+# .center[Integrating React with .secondary-color[Apollo and GraphQL]]
+<hr>
+- Add Content Here...
+
+---
+template: content
+
+# .center[Apollo + GraphQL + React .secondary-color[Demonstration]]
+<hr>
+- Explore the Apollo APIs for a GraphQL Server and Client
+- Configure a React Project to use Apollo
+- Write some Server-Side and Client-Side Code which uses Apollo
+- Tools:
+ - Visual Studio Code + Node.js
+ - JSON Server (https://github.com/typicode/json-server)
+
+---
+template: content
+
+# .center[Getting .secondary-color[the Code]]
+<hr>
+- Code will be pushed to GitHub at the end of the webinar!
+- https://github.com/t4d-accelebrate-webinars/apollo-and-graphql-with-react
+- Contact Eric: eric@t4d.io
+- Contact Accelebrate: info@accelebrate.com
+
+---
+template: content
+
+# .center[Questions]
+<hr>
+
+.center[<img src="images/question-mark.png" width="300">]   
+
+- Feel free to ask questions on Apollo, GraphQL, React and JavaScript related technologies!
+
+</textarea>
+    <script src="https://remarkjs.com/downloads/remark-latest.min.js">
+    </script>
+    <script>
+        const slideshow = remark.create({
+            ratio: '16:9',
+            slideNumberFormat: ''
+        });
+
+        slideshow.on('afterShowSlide', () => {
+            setTimeout(() => {
+                document.querySelector('.remark-visible').classList.add('do-transition');
+            }, 300);
+        });
+
+        slideshow.on('beforeHideSlide', () => {
+            document.querySelector('.remark-visible').classList.remove('do-transition');
+        });
+
+    </script>
+</body>
+
+</html>
