@@ -90,31 +90,21 @@
       "quantity": 12
     },
     {
-      "isbn": "q",
-      "title": "q",
-      "authorId": "0",
-      "category": "q",
-      "price": 0,
-      "quantity": 0,
+      "isbn": "AAAA",
+      "title": "A book",
+      "category": "some category",
+      "price": 12.34,
+      "quantity": 3,
       "id": 9
     },
     {
-      "isbn": "t",
-      "title": "t",
-      "authorId": "0",
-      "category": "t",
-      "price": 0,
-      "quantity": 0,
+      "isbn": "q",
+      "title": "q",
+      "authorId": "2",
+      "category": "q",
+      "price": 23,
+      "quantity": 3,
       "id": 10
-    },
-    {
-      "isbn": "a",
-      "title": "a",
-      "authorId": "0",
-      "category": "a",
-      "price": 0,
-      "quantity": 0,
-      "id": 11
     }
   ]
 }
