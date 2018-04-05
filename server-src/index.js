@@ -7,11 +7,14 @@ import { schema } from './schema';
 
 const myGraphQLSchema = schema;
 const PORT = 3030;
+const context = {
+    restURL: 'http://localhost:3040', 
+};
 
 const app = express();
 app.use(cors());
 
-app.use('/graphql', bodyParser.json(), graphqlExpress({ schema: myGraphQLSchema }));
-app.get('/graphiql', graphiqlExpress({ endpointURL: '/graphql' }));
+app.use('/graphql', bodyParser.json(), graphqlExpress({ schema: myGraphQLSchema, context }));
+app.get('/graphiql', graphiqlExpress({ endpointURL: '/graphql', context }));
 
 app.listen(PORT);

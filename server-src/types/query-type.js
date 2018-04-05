@@ -4,13 +4,15 @@ import qs from 'querystring';
 
 import { bookType } from './book-type';
 
+const resourceName = 'books';
+
 export const queryType = new GraphQLObjectType({
     name: "Query",
     
     fields: {
         books: {
             type: new GraphQLList(bookType),
-            resolve: () => fetch('http://localhost:3040/books')
+            resolve: (_1, _2, { restURL }) => fetch(`${restURL}/${resourceName}`)
                 .then(res => res.json()),
         },
         book: {
@@ -18,7 +20,7 @@ export const queryType = new GraphQLObjectType({
             args: {
                 id: { type: GraphQLID },
             },
-            resolve: (_, { id }) => fetch(`http://localhost:3040/books/${qs.escape(id)}`)
+            resolve: (_, { id }, { restURL }) => fetch(`${restURL}/${resourceName}/${qs.escape(id)}`)
                 .then(res => res.json()),
         },
     },

@@ -1,93 +1,102 @@
 {
-    "authors": [
-        {
-            "id": 1,
-            "firstName": "Jim",
-            "lastName": "Smith"
-        },
-        {
-            "id": 2,
-            "firstName": "Abby",
-            "lastName": "Thompkins"
-        },
-        {
-            "id": 3,
-            "firstName": "Tim",
-            "lastName": "Jones"
-        }
-    ],
-    "books": [
-        {
-            "id": 1,
-            "isbn": "111222AAAA",
-            "title": "A Friend's Hope",
-            "authorId": 1,
-            "category": "Inspirational",
-            "price": 12.99,
-            "quantity": 4
-        },
-        {
-            "id": 2,
-            "isbn": "111222AAAB",
-            "title": "Good Fellows",
-            "authorId": 2,
-            "category": "Inspirational",
-            "price": 4.99,
-            "quantity": 34
-        },
-        {
-            "id": 3,
-            "isbn": "111222AAAC",
-            "title": "Forbidden Fellowship",
-            "authorId": 3,
-            "category": "Romance",
-            "price": 5.00,
-            "quantity": 10
-        },
-        {
-            "id": 4,
-            "isbn": "111222AAAD",
-            "title": "Quiet Ones",
-            "authorId": 2,
-            "category": "Mystery",
-            "price": 8.99,
-            "quantity": 6
-        },
-        {
-            "id": 5,
-            "isbn": "111222AAAE",
-            "title": "Debating Silence",
-            "authorId": 3,
-            "category": "Humor",
-            "price": 7.99,
-            "quantity": 6
-        },
-        {
-            "id": 6,
-            "isbn": "111222AAAF",
-            "title": "Midnight Killer",
-            "authorId": 3,
-            "category": "Mystery",
-            "price": 10.99,
-            "quantity": 45
-        },
-        {
-            "id": 7,
-            "isbn": "111222AAAG",
-            "title": "History of People",
-            "authorId": 2,
-            "category": "Historical",
-            "price": 15.99,
-            "quantity": 56
-        },
-        {
-            "id": 8,
-            "isbn": "111222AAAH",
-            "title": "Crazy People",
-            "authorId": 1,
-            "category": "Humor",
-            "price": 7.99,
-            "quantity": 12
-        }
-    ]
+  "authors": [
+    {
+      "id": 1,
+      "firstName": "Jim",
+      "lastName": "Smith"
+    },
+    {
+      "id": 2,
+      "firstName": "Abby",
+      "lastName": "Thompkins"
+    },
+    {
+      "id": 3,
+      "firstName": "Tim",
+      "lastName": "Jones"
+    }
+  ],
+  "books": [
+    {
+      "id": 1,
+      "isbn": "111222AAAA",
+      "title": "A Friend's Hope",
+      "authorId": 1,
+      "category": "Inspirational",
+      "price": 12.99,
+      "quantity": 4
+    },
+    {
+      "id": 2,
+      "isbn": "111222AAAB",
+      "title": "Good Fellows",
+      "authorId": 2,
+      "category": "Inspirational",
+      "price": 4.99,
+      "quantity": 34
+    },
+    {
+      "id": 3,
+      "isbn": "111222AAAC",
+      "title": "Forbidden Fellowship",
+      "authorId": 3,
+      "category": "Romance",
+      "price": 5,
+      "quantity": 10
+    },
+    {
+      "id": 4,
+      "isbn": "111222AAAD",
+      "title": "Quiet Ones",
+      "authorId": 2,
+      "category": "Mystery",
+      "price": 8.99,
+      "quantity": 6
+    },
+    {
+      "id": 5,
+      "isbn": "111222AAAE",
+      "title": "Debating Silence",
+      "authorId": 3,
+      "category": "Humor",
+      "price": 7.99,
+      "quantity": 6
+    },
+    {
+      "id": 6,
+      "isbn": "111222AAAF",
+      "title": "Midnight Killer",
+      "authorId": 3,
+      "category": "Mystery",
+      "price": 10.99,
+      "quantity": 45
+    },
+    {
+      "id": 7,
+      "isbn": "111222AAAG",
+      "title": "History of People",
+      "authorId": 2,
+      "category": "Historical",
+      "price": 15.99,
+      "quantity": 56
+    },
+    {
+      "id": 8,
+      "isbn": "111222AAAH",
+      "title": "Crazy People",
+      "authorId": 1,
+      "category": "Humor",
+      "price": 7.99,
+      "quantity": 12
+    },
+    {
+      "isbn": "1111",
+      "title": "New Book",
+      "authorId": "2",
+      "category": "Mystery",
+      "price": 9.99,
+      "quantity": 23,
+      "id": 9
+    }
+  ]
 }
