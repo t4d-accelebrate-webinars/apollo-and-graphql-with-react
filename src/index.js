@@ -12,11 +12,11 @@ const client = new ApolloClient({
 });
 
 
-const booksData = new BooksData(client);
+// const booksData = new BooksData(client);
 
-const insertBook = book => booksData
-    .insert(book)
-    .then(() => refreshBooks());
+// const insertBook = book => booksData
+//     .insert(book)
+//     .then(() => refreshBooks());
 
 // const refreshBooks = () => booksData.all().then(books => {
 //     ReactDOM.render(<ApolloProvider client={client}>
@@ -26,7 +26,7 @@ const insertBook = book => booksData
 
 const refreshBooks = () => {
     ReactDOM.render(<ApolloProvider client={client}>
-        <App insertBook={insertBook} />
+        <App />
     </ApolloProvider>, document.getElementById('root'));
 };
 

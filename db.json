@@ -90,58 +90,22 @@
       "quantity": 12
     },
     {
-      "isbn": "a",
-      "title": "a",
+      "isbn": "q",
+      "title": "q",
       "authorId": "0",
-      "category": "a",
+      "category": "q",
       "price": 0,
       "quantity": 0,
       "id": 9
     },
     {
-      "isbn": "s",
-      "title": "s",
+      "isbn": "t",
+      "title": "t",
       "authorId": "0",
-      "category": "s",
+      "category": "t",
       "price": 0,
       "quantity": 0,
       "id": 10
-    },
-    {
-      "isbn": "f",
-      "title": "f",
-      "authorId": "0",
-      "category": "f",
-      "price": 0,
-      "quantity": 0,
-      "id": 11
-    },
-    {
-      "isbn": "w",
-      "title": "w",
-      "authorId": "0",
-      "category": "w",
-      "price": 0,
-      "quantity": 0,
-      "id": 12
-    },
-    {
-      "isbn": "s",
-      "title": "s",
-      "authorId": "0",
-      "category": "s",
-      "price": 0,
-      "quantity": 0,
-      "id": 13
-    },
-    {
-      "isbn": "d",
-      "title": "d",
-      "authorId": "0",
-      "category": "d",
-      "price": 0,
-      "quantity": 0,
-      "id": 14
     },
     {
       "isbn": "a",
@@ -150,7 +114,7 @@
       "category": "a",
       "price": 0,
       "quantity": 0,
-      "id": 15
+      "id": 11
     }
   ]
 }
