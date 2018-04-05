@@ -1,8 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+
 import './index.css';
 import App from './App';
-import registerServiceWorker from './registerServiceWorker';
+import { BooksData } from './services/books-data';
 
-ReactDOM.render(<App />, document.getElementById('root'));
-registerServiceWorker();
+const booksData = new BooksData('http://localhost:3030/graphql');
+
+booksData.all().then(books => {
+    ReactDOM.render(<App books={books} />, document.getElementById('root'));
+});
+
