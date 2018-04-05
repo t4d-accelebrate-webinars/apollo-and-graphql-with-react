@@ -1,13 +1,9 @@
-import ApolloClient from 'apollo-boost';
 import gql from 'graphql-tag';
 
 export class BooksData {
 
-    constructor(uri) {
-        this._uri = uri;
-        this._client = new ApolloClient({
-            uri: this._uri,
-        });
+    constructor(client) {
+        this._client = client;
     }
 
     all() {
