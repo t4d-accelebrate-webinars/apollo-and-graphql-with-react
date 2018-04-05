@@ -1,0 +1,127 @@
+.title, .content {
+    font-family: "Book Antiqua";
+    color: white;
+    background-image: radial-gradient(#4055CC,#0D2299);
+}
+
+.secondary-color {
+    color: #EE903C;
+}
+
+.presenter {
+    font-size: 1.5rem;
+}
+
+.divider {
+    background-color: black;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #EE903C;
+    margin: 1em auto;
+    padding: 0; 
+    width:500px;
+}
+
+.title h1 {
+    font-size: 5rem;
+}
+
+.content h1 {
+    margin-top:20px;
+    font-size:3.8rem;
+}
+
+.content h2 {
+    color:  #EE903C;
+    font-size: 2.4rem;
+}
+
+.demo h1 {
+    margin-top: 275px;
+    font-weight:normal;
+    font-size: 4.5rem;
+}
+
+.demo h2 {
+    margin-top:10px;
+    font-size:2.5rem;
+}
+
+.title ul {
+    margin:0;
+    margin-top:50px;
+    list-style-type: none;
+    padding:0;
+}
+
+.title ul li {
+    margin:0;
+    padding:0;
+    font-size:2.5rem;
+}
+
+.content ul li {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin:0;
+    padding:2px;
+    font-size:1.7rem;
+    line-height: 2.9rem;
+}
+
+/* .remark-slide-content.title, .remark-slide-content.demo {
+    background-image: url(../images/wnow_web.png);
+    background-size: 80% auto;
+    background-repeat: no-repeat;
+    background-origin: border-box;
+    background-position: top right;
+
+}
+
+.remark-slide-container.remark-visible:not(:first-child) {
+    opacity: 0;
+}
+
+.remark-slide-container.remark-fading {
+    opacity: 0;
+    transition: opacity 0.5s ease 0s;
+}
+
+.remark-slide-container.remark-visible.do-transition {
+    opacity: 1;
+    transition: opacity 0.5s ease 0s;
+}
+
+.remark-slide-container.remark-visible.do-transition .footer {
+    height: 60px;
+    transition: height 1s ease 0s;
+} */
+
+.remark-slide-container .footer {
+    background-color:white;
+    height: 60px;
+    left: 0; right: 0;
+    bottom: 0;
+    position: absolute;
+    padding:0;
+    box-shadow: 0px -6px 8px -3px rgba(0,0,0,0.75);
+}
+
+.remark-slide-container .footer p {
+    float: right;
+    margin:0;
+    padding:0;
+}
+
+.remark-slide-container .footer img {
+    height: 40px;
+    margin-right:60px;
+    margin-top:7px;
+}
+
+a, a:visited {
+    color:white;
+}
