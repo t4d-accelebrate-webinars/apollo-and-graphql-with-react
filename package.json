@@ -9,6 +9,7 @@
     "cors": "^2.8.4",
     "graphql": "0.13.2",
     "graphql-tag": "2.8.0",
+    "node-fetch": "2.1.2",
     "react": "^16.3.1",
     "react-dom": "^16.3.1",
     "react-scripts": "1.1.4"
@@ -16,7 +17,8 @@
   "scripts": {
     "start-client": "react-scripts start",
     "build-client": "react-scripts build",
-    "start-server": "npm run build-server && npm run run-server",
+    "start-server": "npm run build-server && concurrently \"npm run rest\" \"npm run run-server\"",
+    "rest": "json-server --port 3040 --watch db.json",
     "run-server": "node ./server-dist/index",
     "build-server": "babel server-src -d server-dist",
     "build-slides": "decktape --slides 5-1000 ./slides/slides.html ./slides.pdf"
