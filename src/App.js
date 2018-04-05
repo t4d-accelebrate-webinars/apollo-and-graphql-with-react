@@ -3,30 +3,17 @@ import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
 
+import { BookTable } from './components/book-table';
+import { BookForm } from './components/book-form';
+
 class App extends Component {
 
   render() {
 
-    console.dir(this.props);
-
-    return (
-      <table>
-        <thead>
-          <tr>
-            <th>ISBN</th>
-            <th>Title</th>
-            <th>Price</th>
-          </tr>
-        </thead>
-        <tbody>
-          {this.props.books.map(book => <tr>
-            <td>{book.isbn}</td>
-            <td>{book.title}</td>
-            <td>{book.price}</td>
-          </tr>)}
-        </tbody>
-      </table>
-    );
+    return <div>
+      <BookTable books={this.props.books} /> 
+      <BookForm onSubmit={null} />
+    </div>;
   }
 }
 
